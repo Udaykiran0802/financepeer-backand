@@ -1,0 +1,55 @@
+### 
+POST http://localhost:3004/register/
+Content-Type: application/json 
+
+{
+"username" : "udaykiran0802",
+ "name" : "udaykiran Uppala",
+"password" : "udaykiran@",
+"gender" : "male",
+"city" :"khammam"
+
+ }
+
+### 
+POST http://localhost:3004/login/
+Content-Type: application/json 
+
+{
+    "username" : "udaykiran0802",
+    "password" : "udaykiran@"
+}
+
+
+###
+POST http://localhost:3004/data 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVkYXlraXJhbjA4MDIiLCJpYXQiOjE2NDE3MzEwMzh9.i6fArFN-o1swjIX0rMNhsbp7giRvYPORruL0DcQA1ts
+Content-Type: application/json
+
+[
+  {
+    "user_id": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "user_id": 1,
+    "id": 2,
+    "title": "qui est esse",
+    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+  },
+  {
+    "user_id": 1,
+    "id": 3,
+    "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+    "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+  }
+]
+
+###
+GET http://localhost:3004/posts
+
+###
+
+DELETE http://localhost:3004/data
